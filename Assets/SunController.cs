@@ -53,12 +53,19 @@ public class SunController : MonoBehaviour
             RenderSettings.skybox.SetColor("_SkyTint", sun.color);
             this.lensFlare.color = Color.Lerp(lensFlareOff, lensFlareOn, interpolateIndex / 0.7f);
         }
+        else if (sun.transform.eulerAngles.x > 350 && sun.transform.eulerAngles.x < 360)
+        {
+            interpolateIndex = (sun.transform.eulerAngles.x - 350) / 10;
+           
+            this.sun.color = Color.Lerp(Color.black, SkyTintDown, interpolateIndex);
+            RenderSettings.skybox.SetColor("_SkyTint", sun.color);
+            this.lensFlare.color = lensFlareOff;
+        }
         else if (sun.transform.eulerAngles.x > 180)
         {
-            if (sun.transform.eulerAngles.x >= 350) interpolateIndex = (sun.transform.eulerAngles.x - 350) / 10;
-            else if (sun.transform.eulerAngles.x >= 180) interpolateIndex = (sun.transform.eulerAngles.x - 180) / 10;
+            interpolateIndex = (sun.transform.eulerAngles.x - 180) / 10;
 
-            this.sun.color = Color.Lerp(Color.black, SkyTintDown, interpolateIndex);
+            this.sun.color = Color.Lerp(SkyTintDown, Color.black, interpolateIndex);
             RenderSettings.skybox.SetColor("_SkyTint", sun.color);
             this.lensFlare.color = lensFlareOff;
         }
