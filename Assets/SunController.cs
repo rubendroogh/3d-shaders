@@ -4,28 +4,66 @@ using UnityEngine;
 
 public class SunController : MonoBehaviour
 {
-    Light sun;
-    public Color highSunColor = new Color(219, 129, 59, 255);
-    public Color lowSunColor = new Color(255, 49, 0, 255);
+    //lightsource
+    private Light sun;
+
+    // Lensflare
+    private LensFlare lensFlare;
+    private Flare lensFlareTrail;
+    private Color lensFlareOn = new Vector4(1,1,1,0);
+    private Color lensFlareOff = new Vector4(0, 0, 0, 0);
+
+    // Skybox
+    public Material skybox;
+    public Color SkyTintUp;
+    public Color SkyTintDown;
 
     // Start is called before the first frame update
     void Start()
     {
-        sun = this.GetComponent<Light>();
-        //sun.color = highSunColor;
-        RenderSettings.skybox.SetColor("_Tint", lowSunColor);
+        RenderSettings.skybox = skybox;
+        this.sun = this.GetComponent<Light>();
+        this.lensFlare = this.GetComponent<LensFlare>();
+        this.sun.flare = this.lensFlareTrail;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        sun.transform.Rotate(new Vector3(-0.01f, 0, 0));
-        if (sun.transform.eulerAngles.x <= 10)
+        //moving the sun
+        sun.transform.Rotate(new Vector3(-0.002f, 0, 0));
+
+        // changing colors and flares based on position
+        this.SunSetRise();
+    }
+
+    void SunSetRise()
+    {
+        float interpolateIndex = 0;
+
+        if (sun.transform.eulerAngles.x <= 10 || sun.transform.eulerAngles.x > 170 && sun.transform.eulerAngles.x < 180)
         {
-            
-            //sun.color = Color.Lerp(lowSunColor, highSunColor, sun.transform.eulerAngles.x / 10);
-            //RenderSettings.skybox.SetColor("_Tint", Color.red);
+            if (sun.transform.eulerAngles.x <= 10) interpolateIndex = sun.transform.eulerAngles.x / 10;
+            else if (sun.transform.eulerAngles.x <= 180) interpolateIndex = (sun.transform.eulerAngles.x - 170) / 10;
+
+            this.sun.color = Color.Lerp(SkyTintDown, SkyTintUp, interpolateIndex);
+            RenderSettings.skybox.SetColor("_SkyTint", sun.color);
+            this.lensFlare.color = Color.Lerp(lensFlareOff, lensFlareOn, interpolateIndex / 0.7f);
         }
-        //Debug.Log(sun.transform.rotation);
+        else if (sun.transform.eulerAngles.x > 180)
+        {
+            if (sun.transform.eulerAngles.x >= 350) interpolateIndex = (sun.transform.eulerAngles.x - 350) / 10;
+            else if (sun.transform.eulerAngles.x >= 180) interpolateIndex = (sun.transform.eulerAngles.x - 180) / 10;
+
+            this.sun.color = Color.Lerp(Color.black, SkyTintDown, interpolateIndex);
+            RenderSettings.skybox.SetColor("_SkyTint", sun.color);
+            this.lensFlare.color = lensFlareOff;
+        }
+        else
+        {
+            this.sun.color = SkyTintUp;
+            RenderSettings.skybox.SetColor("_SkyTint", SkyTintUp);
+            this.lensFlare.color = lensFlareOn;
+        }
     }
 }
