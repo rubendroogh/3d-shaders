@@ -37,6 +37,9 @@ public class SunController : MonoBehaviour
         this.SunSetRise();
     }
 
+    /// <summary>
+    /// This Function checks where the sun is and changes its effects accordingly.
+    /// </summary>
     void SunSetRise()
     {
         float interpolateIndex = 0;
