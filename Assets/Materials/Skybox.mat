@@ -81,7 +81,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AltitudeGlowModifier: 0
+    - _AltitudeGlowModifier: 0.99
     - _AtmosphereThickness: 0.34
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -95,18 +95,18 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _SkyColorBottomModifier: 9.58
-    - _SkyColorTopModifier: 8.25
+    - _SkyColorBottomModifier: 40
+    - _SkyColorTopModifier: 34.1
     - _SkyManipulation: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SunAngle: 5.7072268
+    - _SunAngle: 1.4835298
     - _SunBeta: 1.9
-    - _SunBlend: 0
+    - _SunBlend: 0.529
     - _SunDisk: 2
-    - _SunGlowIntensity: 0
-    - _SunIntensity: 40.3
+    - _SunGlowIntensity: 1.96
+    - _SunIntensity: 42.3
     - _SunRadius: 0.116
     - _SunRiseAngle: 2.5132742
     - _SunSize: 0.041
@@ -117,12 +117,12 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SkyColorBottom: {r: 0.09411766, g: 0.09411766, b: 0.09411766, a: 0}
-    - _SkyColorHorizon: {r: 0, g: 0, b: 0, a: 0}
+    - _SkyColorBottom: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
+    - _SkyColorHorizon: {r: 1, g: 1, b: 1, a: 0}
     - _SkyColorTest: {r: 0.33094516, g: 0.6320754, b: 0.5068998, a: 0}
-    - _SkyColorTop: {r: 0.021003917, g: 0.05212835, b: 0.0754717, a: 0}
+    - _SkyColorTop: {r: 0.4224813, g: 0.6514985, b: 0.8867924, a: 0}
     - _SkyTint: {r: 0.35826808, g: 0.5905537, b: 0.7830189, a: 0}
-    - _SunColor: {r: 0.990566, g: 0.859947, b: 0.4906105, a: 0}
-    - _SunGlowColor: {r: 0.5, g: 0.18640469, b: 0.08726415, a: 0}
+    - _SunColor: {r: 0.735849, g: 0.6242894, b: 0.31585974, a: 0}
+    - _SunGlowColor: {r: 0.8962264, g: 0.7300234, b: 0.4269758, a: 0}
     - _SunVector: {r: 0.5, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

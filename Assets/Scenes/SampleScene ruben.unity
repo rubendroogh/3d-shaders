@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 20bd044e99b9cde46b79f1b7eb07ed78, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17905408, g: 0.21854448, b: 0.2733927, a: 1}
+  m_IndirectSpecularColor: {r: 0.107574776, g: 0.2198889, b: 0.40292627, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -707,8 +707,95 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skybox: {fileID: 2100000, guid: 20bd044e99b9cde46b79f1b7eb07ed78, type: 2}
-  SkyTintUp: {r: 0.7783019, g: 0.9729768, b: 1, a: 0}
-  SkyTintDown: {r: 1, g: 0.33490568, b: 0.33490568, a: 0}
+  sunriseAngle: 144
+  sunAngle: 85
+  sunRotationSpeed: 0.5
+  sunPhases:
+  - startAngle: 0
+    endAngle: 160
+    fadeInLength: 20
+    skyTint: {r: 0.4224813, g: 0.6514985, b: 0.8867924, a: 0}
+    groundTint: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
+    HorizonColor: {r: 1, g: 1, b: 1, a: 0}
+    skyTintStrength: 34.1
+    groundTintStrength: 40
+    sunColor: {r: 0.735849, g: 0.6242894, b: 0.31585974, a: 0}
+    sunIntensity: 42.3
+    sunRadius: 0.116
+    sunGlowColor: {r: 0.8962264, g: 0.7300234, b: 0.4269758, a: 0}
+    sunGlowRadius: 0.529
+    sunGlowIntensity: 1.96
+    sunGLowAltitudeSupressor: 0.99
+    lightingIntensity: 5
+    lightingTemperature: 10000
+  - startAngle: 160
+    endAngle: 180
+    fadeInLength: 20
+    skyTint: {r: 0.1254902, g: 0.23137257, b: 0.34117648, a: 0}
+    groundTint: {r: 0.09411766, g: 0.09411766, b: 0.09411766, a: 0}
+    HorizonColor: {r: 0.6117647, g: 0.15686275, b: 0.054901965, a: 0}
+    skyTintStrength: 5.2
+    groundTintStrength: 40
+    sunColor: {r: 0.8980393, g: 0.35686275, b: 0.121568635, a: 0}
+    sunIntensity: 40.3
+    sunRadius: 0.116
+    sunGlowColor: {r: 0.69803923, g: 0.29411766, b: 0.16078432, a: 0}
+    sunGlowRadius: 0.821
+    sunGlowIntensity: 1.29
+    sunGLowAltitudeSupressor: 0.99
+    lightingIntensity: 2.5
+    lightingTemperature: 2000
+  - startAngle: 180
+    endAngle: 190
+    fadeInLength: 10
+    skyTint: {r: 0.11449803, g: 0.20179656, b: 0.2924528, a: 0}
+    groundTint: {r: 0.09411766, g: 0.09411766, b: 0.09411766, a: 0}
+    HorizonColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 0}
+    skyTintStrength: 8.25
+    groundTintStrength: 9.58
+    sunColor: {r: 0.8980393, g: 0.35686275, b: 0.121568635, a: 0}
+    sunIntensity: 40.3
+    sunRadius: 0.116
+    sunGlowColor: {r: 0.69803923, g: 0.29411766, b: 0.16078432, a: 0}
+    sunGlowRadius: 0.281
+    sunGlowIntensity: 1.29
+    sunGLowAltitudeSupressor: 0.99
+    lightingIntensity: 0
+    lightingTemperature: 2000
+  - startAngle: 190
+    endAngle: 350
+    fadeInLength: 10
+    skyTint: {r: 0.021003917, g: 0.05212835, b: 0.0754717, a: 0}
+    groundTint: {r: 0.09411766, g: 0.09411766, b: 0.09411766, a: 0}
+    HorizonColor: {r: 0, g: 0, b: 0, a: 0}
+    skyTintStrength: 8.25
+    groundTintStrength: 9.58
+    sunColor: {r: 0.990566, g: 0.859947, b: 0.4906105, a: 0}
+    sunIntensity: 40.3
+    sunRadius: 0.116
+    sunGlowColor: {r: 0.5, g: 0.18640469, b: 0.08726415, a: 0}
+    sunGlowRadius: 0
+    sunGlowIntensity: 0
+    sunGLowAltitudeSupressor: 0
+    lightingIntensity: 0
+    lightingTemperature: 2000
+  - startAngle: 350
+    endAngle: 360
+    fadeInLength: 10
+    skyTint: {r: 0.12655748, g: 0.23107995, b: 0.33962262, a: 0}
+    groundTint: {r: 0.09411766, g: 0.09411766, b: 0.09411766, a: 0}
+    HorizonColor: {r: 0.6132076, g: 0.15840788, b: 0.054957267, a: 0}
+    skyTintStrength: 5.2
+    groundTintStrength: 40
+    sunColor: {r: 0.8962264, g: 0.35677058, b: 0.12259703, a: 0}
+    sunIntensity: 40.3
+    sunRadius: 0.116
+    sunGlowColor: {r: 0.6981132, g: 0.2930137, b: 0.16135636, a: 0}
+    sunGlowRadius: 0.821
+    sunGlowIntensity: 1.29
+    sunGLowAltitudeSupressor: 0.99
+    lightingIntensity: 2.5
+    lightingTemperature: 2000
 --- !u!108 &847394616
 Light:
   m_ObjectHideFlags: 0
@@ -754,7 +841,7 @@ Light:
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 2800000, guid: bdaf5808ae799e14390d047a519d17ef, type: 3}
   m_DrawHalo: 0
-  m_Flare: {fileID: 12100000, guid: 725f942c1143ceb4f90c382793d668f4, type: 2}
+  m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
@@ -764,7 +851,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 4209
+  m_ColorTemperature: 10000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -778,7 +865,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847394612}
-  m_LocalRotation: {x: 0.12607859, y: -0.2566048, z: 0.03378265, w: 0.9576622}
+  m_LocalRotation: {x: -0.6425245, y: 0.22783127, z: -0.20876887, w: -0.70119244}
   m_LocalPosition: {x: 59.28, y: 4.79, z: 34.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
