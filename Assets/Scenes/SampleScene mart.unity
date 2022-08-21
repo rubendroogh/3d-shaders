@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14149463, g: 0.22238722, b: 0.39779055, a: 1}
+  m_IndirectSpecularColor: {r: 0.0048605194, g: 0.0059770723, b: 0.007091571, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -691,15 +691,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skybox: {fileID: 2100000, guid: 20bd044e99b9cde46b79f1b7eb07ed78, type: 2}
-  sunriseAngle: 0
-  sunAngle: 145
-  sunRotationSpeed: 0.02
+  sunriseAngle: 144
+  sunAngle: 327
+  sunRotationSpeed: 0.5
   sunPhases:
   - startAngle: 0
     endAngle: 160
     fadeInLength: 20
     skyTint: {r: 0.4224813, g: 0.6514985, b: 0.8867924, a: 0}
-    groundTint: {r: 0.3207547, g: 0.14992605, b: 0.049928803, a: 0}
+    groundTint: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
     HorizonColor: {r: 1, g: 1, b: 1, a: 0}
     skyTintStrength: 34.1
     groundTintStrength: 40
@@ -716,7 +716,7 @@ MonoBehaviour:
     endAngle: 180
     fadeInLength: 20
     skyTint: {r: 0.1254902, g: 0.23137257, b: 0.34117648, a: 0}
-    groundTint: {r: 0.21698111, g: 0.105375566, b: 0.041963324, a: 0}
+    groundTint: {r: 0.09411766, g: 0.09411766, b: 0.09411766, a: 0}
     HorizonColor: {r: 0.6117647, g: 0.15686275, b: 0.054901965, a: 0}
     skyTintStrength: 5.2
     groundTintStrength: 40
@@ -767,7 +767,7 @@ MonoBehaviour:
     endAngle: 360
     fadeInLength: 10
     skyTint: {r: 0.12655748, g: 0.23107995, b: 0.33962262, a: 0}
-    groundTint: {r: 0.21568629, g: 0.10588236, b: 0.043137256, a: 0}
+    groundTint: {r: 0.09411766, g: 0.09411766, b: 0.09411766, a: 0}
     HorizonColor: {r: 0.6132076, g: 0.15840788, b: 0.054957267, a: 0}
     skyTintStrength: 5.2
     groundTintStrength: 40
@@ -792,7 +792,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.9807735, b: 0.6650944, a: 1}
-  m_Intensity: 5
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -835,7 +835,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 10000
+  m_ColorTemperature: 2000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -849,7 +849,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847394612}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.2701146, y: -0.29629162, z: -0.08776557, w: 0.91189176}
   m_LocalPosition: {x: 59.28, y: 4.79, z: 34.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
