@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Skybox
-  m_Shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 4a3749e1e3f197b43be41e6e90024afa, type: 3}
   m_ShaderKeywords: _SUNDISK_HIGH_QUALITY
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -81,6 +81,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AltitudeGlowModifier: 0
     - _AtmosphereThickness: 0.34
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -94,10 +95,20 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _SkyColorBottomModifier: 9.58
+    - _SkyColorTopModifier: 8.25
+    - _SkyManipulation: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SunAngle: 5.7072268
+    - _SunBeta: 1.9
+    - _SunBlend: 0
     - _SunDisk: 2
+    - _SunGlowIntensity: 0
+    - _SunIntensity: 40.3
+    - _SunRadius: 0.116
+    - _SunRiseAngle: 2.5132742
     - _SunSize: 0.041
     - _SunSizeConvergence: 3.31
     - _UVSec: 0
@@ -106,5 +117,12 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SkyTint: {r: 0.7908961, g: 0.9367293, b: 0.9622174, a: 0}
+    - _SkyColorBottom: {r: 0.09411766, g: 0.09411766, b: 0.09411766, a: 0}
+    - _SkyColorHorizon: {r: 0, g: 0, b: 0, a: 0}
+    - _SkyColorTest: {r: 0.33094516, g: 0.6320754, b: 0.5068998, a: 0}
+    - _SkyColorTop: {r: 0.021003917, g: 0.05212835, b: 0.0754717, a: 0}
+    - _SkyTint: {r: 0.35826808, g: 0.5905537, b: 0.7830189, a: 0}
+    - _SunColor: {r: 0.990566, g: 0.859947, b: 0.4906105, a: 0}
+    - _SunGlowColor: {r: 0.5, g: 0.18640469, b: 0.08726415, a: 0}
+    - _SunVector: {r: 0.5, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
