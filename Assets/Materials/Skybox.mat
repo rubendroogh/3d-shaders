@@ -96,19 +96,19 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SkyColorBottomModifier: 40
-    - _SkyColorTopModifier: 34.1
+    - _SkyColorTopModifier: 32.655
     - _SkyManipulation: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SunAngle: 1.4835298
+    - _SunAngle: 0.33161256
     - _SunBeta: 1.9
-    - _SunBlend: 0.529
+    - _SunBlend: 0.54359996
     - _SunDisk: 2
-    - _SunGlowIntensity: 1.96
-    - _SunIntensity: 42.3
+    - _SunGlowIntensity: 1.9265001
+    - _SunIntensity: 42.2
     - _SunRadius: 0.116
-    - _SunRiseAngle: 2.5132742
+    - _SunRiseAngle: 1.6057029
     - _SunSize: 0.041
     - _SunSizeConvergence: 3.31
     - _UVSec: 0
@@ -117,12 +117,12 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SkyColorBottom: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
-    - _SkyColorHorizon: {r: 1, g: 1, b: 1, a: 0}
+    - _SkyColorBottom: {r: 0.12392157, g: 0.12392157, b: 0.12392157, a: 0}
+    - _SkyColorHorizon: {r: 0.9806604, g: 0.9579204, b: 0.9527479, a: 0}
     - _SkyColorTest: {r: 0.33094516, g: 0.6320754, b: 0.5068998, a: 0}
-    - _SkyColorTop: {r: 0.4224813, g: 0.6514985, b: 0.8867924, a: 0}
+    - _SkyColorTop: {r: 0.4076851, g: 0.63047755, b: 0.85943395, a: 0}
     - _SkyTint: {r: 0.35826808, g: 0.5905537, b: 0.7830189, a: 0}
-    - _SunColor: {r: 0.735849, g: 0.6242894, b: 0.31585974, a: 0}
-    - _SunGlowColor: {r: 0.8962264, g: 0.7300234, b: 0.4269758, a: 0}
+    - _SunColor: {r: 0.7438679, g: 0.61091346, b: 0.3061966, a: 0}
+    - _SunGlowColor: {r: 0.88632077, g: 0.7081729, b: 0.4136948, a: 0}
     - _SunVector: {r: 0.5, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

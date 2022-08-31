@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VolumetricFog
+  m_Shader: {fileID: 4800000, guid: 0a5249b6dd3b3644b9d846b8d03db8f1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 6760285441061374829, guid: 0ffbec7ffb9436c4cbe44cf319da9c05, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AltitudeGlowModifier: 2
+    - _Glossiness: 0.233
+    - _Metallic: 0.163
+    - _SkyColorBottomModifier: 3
+    - _SkyColorTopModifier: 8.5
+    - _SunAngle: 0
+    - _SunBlend: 1
+    - _SunGlowIntensity: 10
+    - _SunIntensity: 30
+    - _SunRadius: 30
+    - _SunRiseAngle: 0
+    m_Colors:
+    - _Color: {r: 0.07440368, g: 0.8301887, b: 0.082258664, a: 0.69411767}
+    - _SkyColorBottom: {r: 0.36999997, g: 0.52, b: 0.73, a: 0}
+    - _SkyColorHorizon: {r: 0.36999997, g: 0.52, b: 0.73, a: 0}
+    - _SkyColorTop: {r: 0.36999997, g: 0.52, b: 0.73, a: 0}
+    - _SunColor: {r: 248.00008, g: 243.00008, b: 158.00003, a: 0}
+    - _SunGlowColor: {r: 248.00008, g: 243.00008, b: 158.00003, a: 0}
+    - _SunVector: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

@@ -149,9 +149,9 @@ Material:
     - _BendDelta: 0.027
     - _BladeBendCurve: 1.04
     - _BladeBendDistance: 0.38
-    - _BladeHeightMax: 1.856
+    - _BladeHeightMax: 2
     - _BladeHeightMin: 1.146
-    - _BladeSegments: 4.73
+    - _BladeSegments: 5.46
     - _BladeWidthMax: 0.0233
     - _BladeWidthMin: 0.0142
     - _Blend: 0
@@ -170,7 +170,7 @@ Material:
     - _Glossiness: 0.065
     - _GlossyReflections: 1
     - _GrassFalloff: 0.183
-    - _GrassThreshold: 0.071
+    - _GrassThreshold: 0.51
     - _HeightTransition: 0
     - _Metallic: 0
     - _Metallic0: 0
@@ -192,7 +192,11 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _TessellationGrassDistance: 0.12
+    - _TessellationDistance: 10
+    - _TessellationDistanceMax: 15
+    - _TessellationDistanceMin: 0.01
+    - _TessellationDistanceStrength: 3
+    - _TessellationGrassDistance: 6
     - _UVSec: 0
     - _WindFrequency: 0.079
     - _WorkflowMode: 1
